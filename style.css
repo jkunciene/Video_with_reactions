@@ -1,8 +1,10 @@
 body{
     margin: 0%;
+}
+a{
+    font-family: 'Lobster', cursive;
 
 }
-header{
-   padding: 10px;
+.balsavimas{
+    padding: 10px;
 }
-
