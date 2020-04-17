@@ -13,23 +13,38 @@
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="http://kitm.lt/" target="_blank">
-            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="img/KITM vertikalus.png" width="30" class="d-inline-block align-top" alt="">
             Kauno informacinių technologijų mokykla
         </a>
     </nav>
 </header>
 
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b9kThoLdDc8?t=2731s" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L7x3oRCBoKM?t=53" allowfullscreen></iframe>
     </div>
-    <div class="row balsavimas">
-        <div class="col">
-            <img src="img/love.png" alt="reactions to video is love">
 
+    <div class="row balsavimas">
+        <div class="col-1">
+            <img src="img/like.png" onclick="countLike()" alt="reactions to video is like">
         </div>
-        <div>
-            <img src="img/dislike.png" alt="reactions to video is dislike">
+        <div class="col-5">
+            <div class="row">
+                <div class="col-3"> <p>Patinka</p></div>
+                <div class="col text-left" id="patinka"></div>
+            </div>
         </div>
+
+        <div class="col-5">
+            <div class="row">
+                <div id="nepatinka" class="col text-right"></div>
+                <div class="col-3 text-right"><p>Nepatinka</p></div>
+            </div>
+        </div>
+
+        <div class="col text-right">
+            <img src="img/dislike.png" onclick="countUnLike()" alt="reactions to video is dislike">
+        </div>
+
     </div>
 
 <footer>
